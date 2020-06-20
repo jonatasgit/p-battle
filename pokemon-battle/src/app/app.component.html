@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-dark bg-dark">
+    
+    <div class="btn-group" dropdown>
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+            aria-controls="dropdown-basic">
+            Pokoronga Menú<span class="caret"></span>
+        </button>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+            <li role="menuitem"><a class="dropdown-item" href="#" (click)="showPokedex()">Show/Hide Pokedex</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Battle (Construction)</a></li>                
+            
+        </ul>
+    </div>
+    <h5 class="navbar-brand" href="#">PokeWorld</h5>
+</nav>
+<div *ngIf="!pokedexAppear">
+    <br><br>
+    <img src="http://pngimg.com/uploads/pokemon/pokemon_PNG143.png" alt="first slide" style="display: block; width: 100%;">
+
+</div>
+<app-pokedex *ngIf="pokedexAppear"></app-pokedex>
