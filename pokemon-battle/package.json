@@ -1,6 +1,6 @@
 {
   "name": "pokemon-battle",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,10 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot --prod"
-  },
-  "engines": {
-    "node": "10.13.0",
-    "npm": "6.4.1"
   },
   "private": true,
   "dependencies": {
